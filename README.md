@@ -9,6 +9,48 @@ Sabendo que a fórmula de cálculo da área é igual a `pi * (raio * raio)`.
 
 [Solução.](main.c)
 
+> [!IMPORTANT]\
+> **Boas práticas**:
+>
+> * **Uso de constantes**:
+>   * A constante `pi` foi declarada como `const`, o que protege o valor de ser alterado acidentalmente em outras partes do programa.
+>
+> * **Separação de lógica**:
+>   * O código divide as etapas (leitura de entrada, cálculo, e exibição do resultado), o que torna o fluxo mais fácil de entender.
+>
+> * **Entrada do usuário**: Solicita que o valor do raio seja fornecido, deixando o programa mais interativo e dinâmico.
+
+> [!WARNING]\
+> **Sugestões de melhoria**:
+>
+> * **Substituir `void main()` por `int main()`**:
+>   * O padrão em C é que a função principal retorne um valor inteiro para indicar o status de execução.
+>
+> * **Usar `M_PI` em vez de um valor aproximado de pi**:
+>   * O valor de `pi` pode ser obtido de `math.h` (como `M_PI`) para maior precisão em cálculos matemáticos.
+>
+> * **Validação da entrada do usuário**:
+>   * Verificar se o valor inserido pelo usuário é válido (por exemplo, um número positivo para o raio) antes de realizar o cálculo.
+>
+> * **Melhorar o formato de saída**:
+>   * Utilizar um número fixo de casas decimais ao exibir o resultado da área, como `%.2f`.
+>
+> * **Comentário para cálculo de área**:
+>   * Explicitar no comentário que a fórmula `pi * (raio * raio)` é equivalente a `pi * raio²`, já que alguns iniciantes podem ter dúvidas.
+
+> [!NOTE]\
+> **Observações**:
+>
+> * **Precisão de `pi`**:
+>   * Usar `3.14` é aceitável em contextos simples, mas pode causar imprecisões em cálculos mais complexos ou críticos.
+>
+> * **Clareza do programa**:
+>   * O código é fácil de entender e adequado para iniciantes que estão aprendendo lógica de programação e manipulação de variáveis.
+>
+> * **Comportamento de retorno**:
+>   * Em sistemas modernos, `void main()` é frequentemente considerado inadequado.
+> * Para conformidade com padrões C, a função principal deve ser declarada como `int main()` com um `return 0` no final.
+
 <!-- Informações -->
 ## &#8505; Informações
 
